@@ -27,7 +27,7 @@ public class UsuarioService {
         return usuarioRepository.findById(id)
                 .map(usuario -> {
                     usuario.setNome(dadosAtualizados.getNome());
-                    usuario.setNome(dadosAtualizados.getEmail());
+                    usuario.setEmail(dadosAtualizados.getEmail());
 
                     return usuarioRepository.save(usuario);
                 });
