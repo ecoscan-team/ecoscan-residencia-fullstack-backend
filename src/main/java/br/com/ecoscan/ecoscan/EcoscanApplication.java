@@ -11,3 +11,21 @@ public class EcoscanApplication {
 	}
 
 }
+
+
+/*
+{
+  "nome": "Igor",
+  "email": "igor@email.com"
+}
+*/
+
+/*
+{
+  "descricao": "Descarte irregular de lixo",
+  "localizacao": "Próximo ao rio",
+  "usuario": {
+    "id": 1
+  }
+}
+*/

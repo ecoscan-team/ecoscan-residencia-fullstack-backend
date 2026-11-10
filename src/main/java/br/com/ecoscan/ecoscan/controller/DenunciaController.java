@@ -20,7 +20,6 @@ public class DenunciaController {
         this.denunciaService = denunciaService;
     }
 
-    // Cadastrar denúncia
     @PostMapping
     public ResponseEntity<Denuncia> cadastrar(
             @RequestBody Denuncia denuncia) {
@@ -34,7 +33,6 @@ public class DenunciaController {
         return ResponseEntity.ok(novaDenuncia);
     }
 
-    // Listar todas as denúncias
     @GetMapping
     public ResponseEntity<List<Denuncia>> listarTodas() {
 
@@ -43,7 +41,6 @@ public class DenunciaController {
         );
     }
 
-    // Consultar denúncia por ID
     @GetMapping("/{id}")
     public ResponseEntity<Denuncia> buscarPorId(
             @PathVariable Long id) {
@@ -55,7 +52,6 @@ public class DenunciaController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    // Atualizar denúncia
     @PutMapping("/{id}")
     public ResponseEntity<Denuncia> atualizar(
             @PathVariable Long id,
