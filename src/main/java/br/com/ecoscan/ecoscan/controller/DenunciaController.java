@@ -64,7 +64,6 @@ public class DenunciaController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    // Excluir denúncia
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> excluir(
             @PathVariable Long id) {
